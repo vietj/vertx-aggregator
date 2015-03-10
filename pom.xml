@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.vertx</groupId>
+  <artifactId>vertx-releaser</artifactId>
+  <version>3.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <!-- We release vertx-releaser locally -->
+  <distributionManagement>
+    <repository>
+      <id>local-repo</id>
+      <name>LocalDir</name>
+      <url>file://${project.basedir}/dist-maven</url>
+    </repository>
+    <snapshotRepository>
+      <id>local-snapshot-repo</id>
+      <name>local-snapshot</name>
+      <url>file://${project.basedir}/dist-maven</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <modules>
+    <module>modules/vert.x</module>
+    <module>modules/vertx-apex</module>
+    <module>modules/vertx-auth-service</module>
+    <module>modules/vertx-codegen</module>
+    <module>modules/vertx-codetrans</module>
+    <module>modules/vertx-docgen</module>
+    <module>modules/vertx-embedded-mongo-db</module>
+    <module>modules/vertx-hazelcast</module>
+    <module>modules/vertx-jdbc-service</module>
+    <module>modules/vertx-lang-groovy</module>
+    <module>modules/vertx-lang-js</module>
+    <module>modules/vertx-maven-service-factory</module>
+    <module>modules/vertx-metrics</module>
+    <module>modules/vertx-mongo-service</module>
+    <module>modules/vertx-reactive-streams</module>
+    <module>modules/vertx-rx</module>
+    <module>modules/vertx-service-factory</module>
+    <module>modules/vertx-service-proxy</module>
+    <module>modules/vertx-sql-common</module>
+    <module>modules/vertx-unit</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+      <plugin>
+        <groupId>io.vertx</groupId>
+        <artifactId>releaser-maven-plugin</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <configuration>
+          <dependencies>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-dependencies</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+          </dependencies>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
