@@ -44,6 +44,9 @@
     <module>modules/vertx-service-proxy</module>
     <module>modules/vertx-sql-common</module>
     <module>modules/vertx-unit</module>
+    <module>modules/vertx-jca</module>
+    <module>modules/vertx-mail-service</module>
+    <module>modules/vertx-mysql-postgres-service</module>
   </modules>
 
   <build>

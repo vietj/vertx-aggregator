@@ -31,8 +31,13 @@ git clone --depth 1 git@github.com:vert-x3/vertx-auth-service.git modules/vertx-
 # Db
 git clone --depth 1 git@github.com:vert-x3/vertx-sql-common.git modules/vertx-sql-common
 git clone --depth 1 git@github.com:vert-x3/vertx-jdbc-service.git modules/vertx-jdbc-service
-git clone --depth 1 git@github.com:vert-x3/vertx-embedded-mongo-db modules/vertx-embedded-mongo-db
-git clone --depth 1 git@github.com:vert-x3/vertx-mongo-service modules/vertx-mongo-service
+git clone --depth 1 git@github.com:vert-x3/vertx-embedded-mongo-db.git modules/vertx-embedded-mongo-db
+git clone --depth 1 git@github.com:vert-x3/vertx-mongo-service.git modules/vertx-mongo-service
+git clone --depth 1 git@github.com:vert-x3/vertx-mysql-postgresql-service.git modules/vertx-mysql-postgres-service
+
+# Messaging & Integration
+git clone --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
+git clone --depth 1 git@github.com:vert-x3/vertx-mail-service.git modules/vertx-mail-service
 
 # Web
 git clone --depth 1 git@github.com:vert-x3/vertx-apex.git modules/vertx-apex

@@ -33,6 +33,11 @@ git --git-dir=modules/vertx-sql-common/.git --work-tree=modules/vertx-sql-common
 git --git-dir=modules/vertx-jdbc-service/.git --work-tree=modules/vertx-jdbc-service push origin master
 git --git-dir=modules/vertx-embedded-mongo-db/.git --work-tree=modules/vertx-embedded-mongo-db push origin master
 git --git-dir=modules/vertx-mongo-service/.git --work-tree=modules/vertx-mongo-service push origin master
+git --git-dir=modules/vertx-mysql-postgres-service/.git --work-tree=modules/vertx-mysql-postgres-service push origin master
+
+# Messaging & Integration
+git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push origin master
+git --git-dir=modules/vertx-mail-service/.git --work-tree=modules/vertx-mail-service push origin master
 
 # Web
 git --git-dir=modules/vertx-apex/.git --work-tree=modules/vertx-apex push origin master
