@@ -10,6 +10,9 @@ cd vertx-dependencies
 mvn versions:set -DnewVersion=3.0.0-milestoneX
 # edit file and change stack.version to 3.0.0-milestoneX
 mvn deploy -Psonatype-oss-release
+git add .
+git commit -m "Releasing 3.0.0-milestoneX"
+git tag 3.0.0-milestoneX
 ```
 
 ### Clone released components
