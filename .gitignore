@@ -14,3 +14,4 @@ org.eclipse.core.resources.prefs
 org.eclipse.jdt.core.prefs
 dependency-reduced-pom.xml
 modules
+dist-maven
