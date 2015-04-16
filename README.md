@@ -78,3 +78,7 @@ sh push.sh
 ```
 
 And also for vertx-dependencies of course.
+
+## Releaser plugin
+
+Install the releaser plugin https://github.com/vietj/releaser-maven-plugin if you don't have it
