@@ -32,21 +32,23 @@
     <module>modules/vertx-docgen</module>
     <module>modules/vertx-embedded-mongo-db</module>
     <module>modules/vertx-hazelcast</module>
-    <module>modules/vertx-jdbc-service</module>
+    <module>modules/vertx-jdbc-client</module>
     <module>modules/vertx-lang-groovy</module>
     <module>modules/vertx-lang-js</module>
-    <module>modules/vertx-maven-service-factory</module>
-    <module>modules/vertx-metrics</module>
-    <module>modules/vertx-mongo-service</module>
+    <module>modules/vertx-lang-ruby</module>
+    <module>modules/vertx-dropwizard-metrics</module>
+    <module>modules/vertx-mongo-client</module>
     <module>modules/vertx-reactive-streams</module>
     <module>modules/vertx-rx</module>
     <module>modules/vertx-service-factory</module>
     <module>modules/vertx-service-proxy</module>
+    <module>modules/vertx-maven-service-factory</module>
+    <module>modules/vertx-http-service-factory</module>
     <module>modules/vertx-sql-common</module>
     <module>modules/vertx-unit</module>
     <module>modules/vertx-jca</module>
-    <module>modules/vertx-mail-service</module>
-    <module>modules/vertx-mysql-postgres-service</module>
+    <module>modules/vertx-mail-client</module>
+    <module>modules/vertx-mysql-postgres-client</module>
   </modules>
 
   <build>

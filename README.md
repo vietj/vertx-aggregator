@@ -68,7 +68,6 @@ Edit the root `pom.xml` and change the `vertx-dependencies` to `3.0.0-SNAPSHOT` 
 ```
 mvn io.vertx:releaser-maven-plugin:apply
 mvn io.vertx:releaser-maven-plugin:release
-mvn io.vertx:releaser-maven-plugin:tag
 ```
 
 ### Push everything back to their respective repos
