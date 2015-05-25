@@ -28,7 +28,7 @@ git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push origin master
 
 # Security
-git --git-dir=modules/vertx-auth-service/.git --work-tree=modules/vertx-auth-service push origin master
+git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push origin master
 
 # Db
 git --git-dir=modules/vertx-sql-common/.git --work-tree=modules/vertx-sql-common push origin master
@@ -42,4 +42,4 @@ git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push origin m
 git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-client push origin master
 
 # Web
-git --git-dir=modules/vertx-apex/.git --work-tree=modules/vertx-apex push origin master
+git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push origin master

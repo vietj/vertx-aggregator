@@ -25,8 +25,8 @@
 
   <modules>
     <module>modules/vert.x</module>
-    <module>modules/vertx-apex</module>
-    <module>modules/vertx-auth-service</module>
+    <module>modules/vertx-web</module>
+    <module>modules/vertx-auth</module>
     <module>modules/vertx-codegen</module>
     <module>modules/vertx-codetrans</module>
     <module>modules/vertx-docgen</module>

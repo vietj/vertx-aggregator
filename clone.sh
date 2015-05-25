@@ -28,7 +28,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx
 git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-hazelcast
 
 # Security
-git clone --depth 1 git@github.com:vert-x3/vertx-auth-service.git modules/vertx-auth-service
+git clone --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth
 
 # Db
 git clone --depth 1 git@github.com:vert-x3/vertx-sql-common.git modules/vertx-sql-common
@@ -42,7 +42,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
 git clone --depth 1 git@github.com:vert-x3/vertx-mail-client.git modules/vertx-mail-client
 
 # Web
-git clone --depth 1 git@github.com:vert-x3/vertx-apex.git modules/vertx-apex
+git clone --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web
 
 # Stack
 # git clone --depth 1 git@github.com:vert-x3/vertx-stack.git modules/vertx-stack
