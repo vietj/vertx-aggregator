@@ -35,6 +35,7 @@ git --git-dir=modules/vertx-sql-common/.git --work-tree=modules/vertx-sql-common
 git --git-dir=modules/vertx-jdbc-client/.git --work-tree=modules/vertx-jdbc-client push --tags origin master
 git --git-dir=modules/vertx-embedded-mongo-db/.git --work-tree=modules/vertx-embedded-mongo-db push --tags origin master
 git --git-dir=modules/vertx-mongo-client/.git --work-tree=modules/vertx-mongo-client push --tags origin master
+git --git-dir=modules/vertx-redis-client/.git --work-tree=modules/vertx-redis-client push --tags origin master
 
 # Messaging & Integration
 git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push --tags origin master

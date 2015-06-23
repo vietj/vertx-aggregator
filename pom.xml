@@ -48,6 +48,7 @@
     <module>modules/vertx-unit</module>
     <module>modules/vertx-jca</module>
     <module>modules/vertx-mail-client</module>
+    <module>modules/vertx-redis-client</module>
   </modules>
 
   <build>
