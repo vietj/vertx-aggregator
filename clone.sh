@@ -17,6 +17,10 @@ git clone --depth 1 git@github.com:vert-x3/vertx-unit.git modules/vertx-unit
 git clone --depth 1 git@github.com:vert-x3/vertx-dropwizard-metrics.git modules/vertx-dropwizard-metrics
 git clone --depth 1 git@github.com:vert-x3/vertx-rx.git modules/vertx-rx
 git clone --depth 1 git@github.com:vert-x3/vertx-reactive-streams.git modules/vertx-reactive-streams
+git clone --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
+
+# Programming
+git clone --depth 1 git@github.com:vert-x3/vertx-sync.git modules/vertx-sync
 
 # Service
 git clone --depth 1 git@github.com:vert-x3/vertx-service-factory.git modules/vertx-service-factory
@@ -26,6 +30,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx
 
 # Clustering
 git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-hazelcast
+# git clone --depth 1 git@github.com:vert-x3/vertx-jgroups.git modules/vertx-jgroups
 
 # Security
 git clone --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth
@@ -38,6 +43,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-mongo-client.git modules/vertx-
 git clone --depth 1 git@github.com:vert-x3/vertx-redis-client.git modules/vertx-redis-client
 
 # Messaging & Integration
+git clone --depth 1 git@github.com:vert-x3/vertx-stomp.git modules/vertx-stomp
 git clone --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
 git clone --depth 1 git@github.com:vert-x3/vertx-mail-client.git modules/vertx-mail-client
 

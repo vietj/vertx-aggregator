@@ -17,6 +17,10 @@ git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags
 git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin master
 git --git-dir=modules/vertx-rx/.git --work-tree=modules/vertx-rx push --tags origin master
 git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reactive-streams push --tags origin master
+git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin master
+
+# Programming
+git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin master
 
 # Service
 git --git-dir=modules/vertx-service-factory/.git --work-tree=modules/vertx-service-factory push --tags origin master
@@ -26,6 +30,7 @@ git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service
 
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master
+# git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
 
 # Security
 git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin master
@@ -38,6 +43,7 @@ git --git-dir=modules/vertx-mongo-client/.git --work-tree=modules/vertx-mongo-cl
 git --git-dir=modules/vertx-redis-client/.git --work-tree=modules/vertx-redis-client push --tags origin master
 
 # Messaging & Integration
+git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp push --tags origin master
 git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push --tags origin master
 git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-client push --tags origin master
 

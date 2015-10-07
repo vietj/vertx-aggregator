@@ -38,7 +38,7 @@ mvn io.vertx:releaser-maven-plugin:apply
 ### Deploy components
 
 ```
-mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests
+mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -Ddependency.locations.enabled=false -DskipTests
 ```
 
 Now this is staged in Nexus
