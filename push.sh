@@ -11,10 +11,12 @@ git --git-dir=modules/vert.x/.git --work-tree=modules/vert.x push --tags origin 
 git --git-dir=modules/vertx-lang-js/.git --work-tree=modules/vertx-lang-js push --tags origin master
 git --git-dir=modules/vertx-lang-groovy/.git --work-tree=modules/vertx-lang-groovy push --tags origin master
 git --git-dir=modules/vertx-lang-ruby/.git --work-tree=modules/vertx-lang-ruby push --tags origin master
+git --git-dir=modules/vertx-lang-ceylon/.git --work-tree=modules/vertx-lang-ceylon push --tags origin master
 
 # Base
 git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags origin master
 git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin master
+git --git-dir=modules/vertx-hawkular-metrics/.git --work-tree=modules/vertx-hawkular-metrics push --tags origin master
 git --git-dir=modules/vertx-rx/.git --work-tree=modules/vertx-rx push --tags origin master
 git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reactive-streams push --tags origin master
 git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin master
@@ -30,7 +32,7 @@ git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service
 
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master
-# git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
+git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
 
 # Security
 git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin master
@@ -43,6 +45,8 @@ git --git-dir=modules/vertx-mongo-client/.git --work-tree=modules/vertx-mongo-cl
 git --git-dir=modules/vertx-redis-client/.git --work-tree=modules/vertx-redis-client push --tags origin master
 
 # Messaging & Integration
+git --git-dir=modules/vertx-bridge-common/.git --work-tree=modules/vertx-bridge-common push --tags origin master
+git --git-dir=modules/vertx-tcp-eventbus-bridge/.git --work-tree=modules/vertx-tcp-eventbus-bridge push --tags origin master
 git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp push --tags origin master
 git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push --tags origin master
 git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-client push --tags origin master

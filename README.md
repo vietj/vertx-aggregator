@@ -5,7 +5,7 @@
 Somewhere else, clone https://github.com/vert-x3/vertx-dependencies change its version and dependencies and deploy it
 
 ```
-git clone https://githu.com/vert-x3/vertx-dependencies
+git clone https://github.com/vert-x3/vertx-dependencies
 cd vertx-dependencies
 mvn versions:set -DnewVersion=3.0.0-milestoneX
 # edit file and change stack.version to 3.0.0-milestoneX
