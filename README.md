@@ -44,7 +44,7 @@ mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -Ddependency
 ### Deploy stack
 
 ```
-mvn deploy -Dgpg.passphrase="my pass phrase" -DskipDocker -DskipTests -Psonatype-oss-release
+mvn deploy -Dgpg.passphrase="my pass phrase" -DskipDocker -DskipNpm -DskipTests -Psonatype-oss-release
 ```
 
 Now this is staged in Nexus

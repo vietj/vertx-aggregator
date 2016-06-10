@@ -23,16 +23,19 @@ git clone --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
 
 # Programming
 git clone --depth 1 git@github.com:vert-x3/vertx-sync.git modules/vertx-sync
+git clone --depth 1 git@github.com:vert-x3/vertx-circuit-breaker.git modules/vertx-circuit-breaker
 
 # Service
 git clone --depth 1 git@github.com:vert-x3/vertx-service-factory.git modules/vertx-service-factory
 git clone --depth 1 git@github.com:vert-x3/vertx-maven-service-factory.git modules/vertx-maven-service-factory
 git clone --depth 1 git@github.com:vert-x3/vertx-http-service-factory.git modules/vertx-http-service-factory
 git clone --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx-service-proxy
+git clone --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
 
 # Clustering
 git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-hazelcast
 git clone --depth 1 git@github.com:vert-x3/vertx-jgroups.git modules/vertx-jgroups
+git clone --depth 1 git@github.com:vert-x3/vertx-ignite.git modules/vertx-ignite
 
 # Security
 git clone --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth
@@ -51,6 +54,10 @@ git clone --depth 1 git@github.com:vert-x3/vertx-tcp-eventbus-bridge.git modules
 git clone --depth 1 git@github.com:vert-x3/vertx-stomp.git modules/vertx-stomp
 git clone --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
 git clone --depth 1 git@github.com:vert-x3/vertx-mail-client.git modules/vertx-mail-client
+git clone --depth 1 git@github.com:vert-x3/vertx-rabbitmq-client.git modules/vertx-rabbitmq-client
+git clone --depth 1 git@github.com:vert-x3/vertx-proton.git modules/vertx-proton
+git clone --depth 1 git@github.com:vert-x3/vertx-amqp-bridge.git modules/vertx-amqp-bridge
+git clone --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-camel-bridge
 
 # Web
 git clone --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web

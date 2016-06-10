@@ -23,16 +23,19 @@ git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --ta
 
 # Programming
 git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin master
+git --git-dir=modules/vertx-circuit-breaker/.git --work-tree=modules/vertx-circuit-breaker push --tags origin master
 
 # Service
 git --git-dir=modules/vertx-service-factory/.git --work-tree=modules/vertx-service-factory push --tags origin master
 git --git-dir=modules/vertx-maven-service-factory/.git --work-tree=modules/vertx-maven-service-factory push --tags origin master
 git --git-dir=modules/vertx-http-service-factory/.git --work-tree=modules/vertx-http-service-factory push --tags origin master
 git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service-proxy push --tags origin master
+git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin master
 
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master
 git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
+git --git-dir=modules/vertx-ignite/.git --work-tree=modules/vertx-ignite push --tags origin master
 
 # Security
 git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin master
@@ -51,6 +54,10 @@ git --git-dir=modules/vertx-tcp-eventbus-bridge/.git --work-tree=modules/vertx-t
 git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp push --tags origin master
 git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push --tags origin master
 git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-client push --tags origin master
+git --git-dir=modules/vertx-rabbitmq-client/.git --work-tree=modules/vertx-rabbitmq-client push --tags origin master
+git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton push --tags origin master
+git --git-dir=modules/vertx-amqp-bridge/.git --work-tree=modules/vertx-amqp-bridge push --tags origin master
+git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge push --tags origin master
 
 # Web
 git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags origin master

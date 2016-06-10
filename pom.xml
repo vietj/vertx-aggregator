@@ -58,6 +58,13 @@
     <module>modules/vertx-jgroups</module>
     <module>modules/vertx-bridge-common</module>
     <module>modules/vertx-tcp-eventbus-bridge</module>
+    <module>modules/vertx-circuit-breaker</module>
+    <module>modules/vertx-service-discovery</module>
+    <module>modules/vertx-ignite</module>
+    <module>modules/vertx-rabbitmq-client</module>
+    <module>modules/vertx-proton</module>
+    <module>modules/vertx-amqp-bridge</module>
+    <module>modules/vertx-camel-bridge</module>
   </modules>
 
   <build>
@@ -75,7 +82,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.3.0-SNAPSHOT</version>
+            <version>3.3.1-SNAPSHOT</version>
           </dependencies>
         </configuration>
       </plugin>
