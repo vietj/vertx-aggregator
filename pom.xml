@@ -33,6 +33,7 @@
     <module>modules/vertx-embedded-mongo-db</module>
     <module>modules/vertx-hazelcast</module>
     <module>modules/vertx-jdbc-client</module>
+    <module>modules/vertx-mysql-postgresql-client</module>
     <module>modules/vertx-lang-groovy</module>
     <module>modules/vertx-lang-js</module>
     <module>modules/vertx-lang-ruby</module>

@@ -41,6 +41,12 @@ mvn io.vertx:releaser-maven-plugin:apply
 mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -Ddependency.locations.enabled=false -DskipTests
 ```
 
+### Deploy stack
+
+```
+mvn deploy -Dgpg.passphrase="my pass phrase" -DskipDocker -DskipTests -Psonatype-oss-release
+```
+
 Now this is staged in Nexus
 
 ### Do the release
