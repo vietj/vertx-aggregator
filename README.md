@@ -38,7 +38,7 @@ mvn io.vertx:releaser-maven-plugin:apply
 ### Deploy components
 
 ```
-mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -Ddependency.locations.enabled=false -DskipTests
+mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests
 ```
 
 ### Deploy stack
