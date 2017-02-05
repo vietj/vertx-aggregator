@@ -4,24 +4,20 @@
 
 Somewhere else, clone https://github.com/vert-x3/vertx-dependencies change its version and dependencies and deploy it
 
-```
-git clone https://github.com/vert-x3/vertx-dependencies
-cd vertx-dependencies
-mvn versions:set -DnewVersion=3.0.0-milestoneX
-# edit file and change stack.version to 3.0.0-milestoneX
-mvn deploy -Psonatype-oss-release
-git add .
-git commit -m "Releasing 3.0.0-milestoneX"
-git tag 3.0.0-milestoneX
-```
+    git clone https://github.com/vert-x3/vertx-dependencies
+    cd vertx-dependencies
+    mvn versions:set -DnewVersion=3.0.0-milestoneX
+    # edit file and change stack.version to 3.0.0-milestoneX
+    mvn deploy -Psonatype-oss-release
+    git add .
+    git commit -m "Releasing 3.0.0-milestoneX"
+    git tag 3.0.0-milestoneX
 
 ### Clone released components
 
 In this project execute
 
-```
-sh clone.sh
-```
+    sh clone.sh
 
 This creates a modules dir used by this project.
 
@@ -31,9 +27,7 @@ Edit the root `pom.xml` and change the `vertx-dependencies` to `3.0.0-milestoneX
 
 Now change the version of all modules with the releaser plugin
 
-```
-mvn io.vertx:releaser-maven-plugin:apply
-```
+    mvn io.vertx:releaser-maven-plugin:apply
 
 ### Deploy components
 
@@ -55,15 +49,11 @@ When we are sure everything is ok (Nexus checked, components checked, ...)
 
 Commit all components, this performs a `git commit` on all modules with the message _Releasing 3.0.0-milestoneX_
 
-```
-mvn io.vertx:releaser-maven-plugin:release
-```
+    mvn io.vertx:releaser-maven-plugin:release
 
 Then tag the release
 
-```
-mvn io.vertx:releaser-maven-plugin:tag
-```
+    mvn io.vertx:releaser-maven-plugin:tag
 
 This adds the tag `3.0.0-milestoneX` to each module
 
