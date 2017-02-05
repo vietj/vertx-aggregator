@@ -6,8 +6,8 @@ Somewhere else, clone https://github.com/vert-x3/vertx-dependencies change its v
 
     git clone https://github.com/vert-x3/vertx-dependencies
     cd vertx-dependencies
-    mvn versions:set -DnewVersion=3.0.0-milestoneX
-    # edit file and change stack.version to 3.0.0-milestoneX
+    mvn versions:set -DnewVersion=3.4.0.Beta1
+    # edit file and change stack.version to 3.4.0.Beta1
     mvn deploy -Psonatype-oss-release
     git add .
     git commit -m "Releasing 3.0.0-milestoneX"

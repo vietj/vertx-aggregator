@@ -38,6 +38,7 @@
     <module>modules/vertx-lang-js</module>
     <module>modules/vertx-lang-ruby</module>
     <module>modules/vertx-lang-ceylon</module>
+    <module>modules/vertx-lang-kotlin</module>
     <module>modules/vertx-dropwizard-metrics</module>
     <module>modules/vertx-hawkular-metrics</module>
     <module>modules/vertx-mongo-client</module>
@@ -55,6 +56,7 @@
     <module>modules/vertx-stomp</module>
     <module>modules/vertx-sync</module>
     <module>modules/vertx-shell</module>
+    <module>modules/vertx-infinispan</module>
     <module>modules/vertx-jgroups</module>
     <module>modules/vertx-bridge-common</module>
     <module>modules/vertx-tcp-eventbus-bridge</module>
@@ -65,7 +67,10 @@
     <module>modules/vertx-proton</module>
     <module>modules/vertx-amqp-bridge</module>
     <module>modules/vertx-camel-bridge</module>
-  </modules>
+    <module>modules/vertx-mqtt-server</module>
+    <module>modules/vertx-consul-client</module>
+    <module>modules/vertx-config</module>
+</modules>
 
   <build>
     <plugins>

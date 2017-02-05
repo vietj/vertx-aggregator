@@ -12,6 +12,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-lang-js.git modules/vertx-lang-
 git clone --depth 1 git@github.com:vert-x3/vertx-lang-groovy.git modules/vertx-lang-groovy
 git clone --depth 1 git@github.com:vert-x3/vertx-lang-ruby.git modules/vertx-lang-ruby
 git clone --depth 1 git@github.com:vert-x3/vertx-lang-ceylon.git modules/vertx-lang-ceylon
+git clone --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-lang-kotlin
 
 # Base
 git clone --depth 1 git@github.com:vert-x3/vertx-unit.git modules/vertx-unit
@@ -32,9 +33,13 @@ git clone --depth 1 git@github.com:vert-x3/vertx-http-service-factory.git module
 git clone --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx-service-proxy
 git clone --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
 
+# IoT
+git clone --depth 1 git@github.com:vert-x3/vertx-mqtt-server.git modules/vertx-mqtt-server
+
 # Clustering
 git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-hazelcast
 git clone --depth 1 git@github.com:vert-x3/vertx-jgroups.git modules/vertx-jgroups
+git clone --depth 1 git@github.com:vert-x3/vertx-infinispan.git modules/vertx-infinispan
 git clone --depth 1 git@github.com:vert-x3/vertx-ignite.git modules/vertx-ignite
 
 # Security
@@ -61,6 +66,10 @@ git clone --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-
 
 # Web
 git clone --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web
+
+# Other
+git clone --depth 1 git@github.com:vert-x3/vertx-consul-client.git modules/vertx-consul-client
+git clone --depth 1 git@github.com:vert-x3/vertx-config.git modules/vertx-config
 
 # Stack
 # git clone --depth 1 git@github.com:vert-x3/vertx-stack.git modules/vertx-stack

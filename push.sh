@@ -12,6 +12,7 @@ git --git-dir=modules/vertx-lang-js/.git --work-tree=modules/vertx-lang-js push 
 git --git-dir=modules/vertx-lang-groovy/.git --work-tree=modules/vertx-lang-groovy push --tags origin master
 git --git-dir=modules/vertx-lang-ruby/.git --work-tree=modules/vertx-lang-ruby push --tags origin master
 git --git-dir=modules/vertx-lang-ceylon/.git --work-tree=modules/vertx-lang-ceylon push --tags origin master
+git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotlin push --tags origin master
 
 # Base
 git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags origin master
@@ -32,9 +33,13 @@ git --git-dir=modules/vertx-http-service-factory/.git --work-tree=modules/vertx-
 git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service-proxy push --tags origin master
 git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin master
 
+# IoT
+git --git-dir=modules/vertx-mqtt-server/.git --work-tree=modules/vertx-mqtt-server push --tags origin master
+
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master
 git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
+git --git-dir=modules/vertx-infinispan/.git --work-tree=modules/vertx-infinispan push --tags origin master
 git --git-dir=modules/vertx-ignite/.git --work-tree=modules/vertx-ignite push --tags origin master
 
 # Security
@@ -61,3 +66,7 @@ git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-br
 
 # Web
 git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags origin master
+
+# Other
+git --git-dir=modules/vertx-consul-client/.git --work-tree=modules/vertx-consul-client push --tags origin master
+git --git-dir=modules/vertx-config/.git --work-tree=modules/vertx-config push --tags origin master
