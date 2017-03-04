@@ -70,6 +70,8 @@
     <module>modules/vertx-mqtt-server</module>
     <module>modules/vertx-consul-client</module>
     <module>modules/vertx-config</module>
+    <module>modules/vertx-grpc</module>
+    <module>modules/vertx-kafka-client</module>
 </modules>
 
   <build>
@@ -87,7 +89,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.4.0-SNAPSHOT</version>
+            <version>3.4.0</version>
           </dependencies>
         </configuration>
       </plugin>

@@ -32,6 +32,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-maven-service-factory.git modul
 git clone --depth 1 git@github.com:vert-x3/vertx-http-service-factory.git modules/vertx-http-service-factory
 git clone --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx-service-proxy
 git clone --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
+git clone --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc
 
 # IoT
 git clone --depth 1 git@github.com:vert-x3/vertx-mqtt-server.git modules/vertx-mqtt-server
@@ -63,6 +64,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-rabbitmq-client.git modules/ver
 git clone --depth 1 git@github.com:vert-x3/vertx-proton.git modules/vertx-proton
 git clone --depth 1 git@github.com:vert-x3/vertx-amqp-bridge.git modules/vertx-amqp-bridge
 git clone --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-camel-bridge
+git clone --depth 1 git@github.com:vert-x3/vertx-kafka-client.git modules/vertx-kafka-client
 
 # Web
 git clone --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web
