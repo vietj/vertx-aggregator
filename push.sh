@@ -32,6 +32,7 @@ git --git-dir=modules/vertx-maven-service-factory/.git --work-tree=modules/vertx
 git --git-dir=modules/vertx-http-service-factory/.git --work-tree=modules/vertx-http-service-factory push --tags origin master
 git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service-proxy push --tags origin master
 git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin master
+git --git-dir=modules/vertx-grpc/.git --work-tree=modules/vertx-grpc push --tags origin master
 
 # IoT
 git --git-dir=modules/vertx-mqtt-server/.git --work-tree=modules/vertx-mqtt-server push --tags origin master
@@ -41,6 +42,7 @@ git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast p
 git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
 git --git-dir=modules/vertx-infinispan/.git --work-tree=modules/vertx-infinispan push --tags origin master
 git --git-dir=modules/vertx-ignite/.git --work-tree=modules/vertx-ignite push --tags origin master
+git --git-dir=modules/vertx-zookeeper/.git --work-tree=modules/vertx-zookeeper push --tags origin master
 
 # Security
 git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin master
@@ -63,6 +65,7 @@ git --git-dir=modules/vertx-rabbitmq-client/.git --work-tree=modules/vertx-rabbi
 git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton push --tags origin master
 git --git-dir=modules/vertx-amqp-bridge/.git --work-tree=modules/vertx-amqp-bridge push --tags origin master
 git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge push --tags origin master
+git --git-dir=modules/vertx-kafka-client/.git --work-tree=modules/vertx-kafka-client push --tags origin master
 
 # Web
 git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags origin master

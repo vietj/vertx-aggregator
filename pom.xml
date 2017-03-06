@@ -57,6 +57,7 @@
     <module>modules/vertx-sync</module>
     <module>modules/vertx-shell</module>
     <module>modules/vertx-infinispan</module>
+    <module>modules/vertx-zookeeper</module>
     <module>modules/vertx-jgroups</module>
     <module>modules/vertx-bridge-common</module>
     <module>modules/vertx-tcp-eventbus-bridge</module>
@@ -89,7 +90,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.4.0</version>
+            <version>3.4.1-SNAPSHOT</version>
           </dependencies>
         </configuration>
       </plugin>

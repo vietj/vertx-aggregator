@@ -42,6 +42,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-haz
 git clone --depth 1 git@github.com:vert-x3/vertx-jgroups.git modules/vertx-jgroups
 git clone --depth 1 git@github.com:vert-x3/vertx-infinispan.git modules/vertx-infinispan
 git clone --depth 1 git@github.com:vert-x3/vertx-ignite.git modules/vertx-ignite
+git clone --depth 1 git@github.com:vert-x3/vertx-zookeeper.git modules/vertx-zookeeper
 
 # Security
 git clone --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth
