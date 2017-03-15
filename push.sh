@@ -16,11 +16,14 @@ git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotl
 
 # Base
 git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags origin master
-git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin master
-git --git-dir=modules/vertx-hawkular-metrics/.git --work-tree=modules/vertx-hawkular-metrics push --tags origin master
 git --git-dir=modules/vertx-rx/.git --work-tree=modules/vertx-rx push --tags origin master
 git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reactive-streams push --tags origin master
+
+# Devops
 git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin master
+git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin master
+git --git-dir=modules/vertx-hawkular-metrics/.git --work-tree=modules/vertx-hawkular-metrics push --tags origin master
+git --git-dir=modules/vertx-health-check/.git --work-tree=modules/vertx-health-check push --tags origin master
 
 # Programming
 git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin master

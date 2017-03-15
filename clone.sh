@@ -16,11 +16,14 @@ git clone --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-l
 
 # Base
 git clone --depth 1 git@github.com:vert-x3/vertx-unit.git modules/vertx-unit
-git clone --depth 1 git@github.com:vert-x3/vertx-dropwizard-metrics.git modules/vertx-dropwizard-metrics
-git clone --depth 1 git@github.com:vert-x3/vertx-hawkular-metrics.git modules/vertx-hawkular-metrics
 git clone --depth 1 git@github.com:vert-x3/vertx-rx.git modules/vertx-rx
 git clone --depth 1 git@github.com:vert-x3/vertx-reactive-streams.git modules/vertx-reactive-streams
+
+# Devops
 git clone --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
+git clone --depth 1 git@github.com:vert-x3/vertx-dropwizard-metrics.git modules/vertx-dropwizard-metrics
+git clone --depth 1 git@github.com:vert-x3/vertx-hawkular-metrics.git modules/vertx-hawkular-metrics
+git clone --depth 1 git@github.com:vert-x3/vertx-health-check.git modules/vertx-health-check
 
 # Programming
 git clone --depth 1 git@github.com:vert-x3/vertx-sync.git modules/vertx-sync
