@@ -38,7 +38,7 @@ git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-ser
 git --git-dir=modules/vertx-grpc/.git --work-tree=modules/vertx-grpc push --tags origin master
 
 # IoT
-git --git-dir=modules/vertx-mqtt-server/.git --work-tree=modules/vertx-mqtt-server push --tags origin master
+git --git-dir=modules/vertx-mqtt/.git --work-tree=modules/vertx-mqtt push --tags origin master
 
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master

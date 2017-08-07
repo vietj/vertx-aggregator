@@ -68,7 +68,7 @@
     <module>modules/vertx-proton</module>
     <module>modules/vertx-amqp-bridge</module>
     <module>modules/vertx-camel-bridge</module>
-    <module>modules/vertx-mqtt-server</module>
+    <module>modules/vertx-mqtt</module>
     <module>modules/vertx-consul-client</module>
     <module>modules/vertx-config</module>
     <module>modules/vertx-grpc</module>
@@ -91,7 +91,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.5.0-SNAPSHOT</version>
+            <version>3.5.0.Beta1</version>
           </dependencies>
         </configuration>
       </plugin>

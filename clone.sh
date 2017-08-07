@@ -38,7 +38,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/v
 git clone --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc
 
 # IoT
-git clone --depth 1 git@github.com:vert-x3/vertx-mqtt-server.git modules/vertx-mqtt-server
+git clone --depth 1 git@github.com:vert-x3/vertx-mqtt.git modules/vertx-mqtt
 
 # Clustering
 git clone --depth 1 git@github.com:vert-x3/vertx-hazelcast.git modules/vertx-hazelcast
