@@ -73,7 +73,7 @@
     <module>modules/vertx-grpc</module>
     <module>modules/vertx-kafka-client</module>
     <module>modules/vertx-health-check</module>
-</modules>
+  </modules>
 
   <build>
     <plugins>
