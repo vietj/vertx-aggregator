@@ -42,7 +42,6 @@ git --git-dir=modules/vertx-mqtt/.git --work-tree=modules/vertx-mqtt push --tags
 
 # Clustering
 git --git-dir=modules/vertx-hazelcast/.git --work-tree=modules/vertx-hazelcast push --tags origin master
-git --git-dir=modules/vertx-jgroups/.git --work-tree=modules/vertx-jgroups push --tags origin master
 git --git-dir=modules/vertx-infinispan/.git --work-tree=modules/vertx-infinispan push --tags origin master
 git --git-dir=modules/vertx-ignite/.git --work-tree=modules/vertx-ignite push --tags origin master
 git --git-dir=modules/vertx-zookeeper/.git --work-tree=modules/vertx-zookeeper push --tags origin master

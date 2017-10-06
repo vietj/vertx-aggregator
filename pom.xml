@@ -58,7 +58,6 @@
     <module>modules/vertx-shell</module>
     <module>modules/vertx-infinispan</module>
     <module>modules/vertx-zookeeper</module>
-    <module>modules/vertx-jgroups</module>
     <module>modules/vertx-bridge-common</module>
     <module>modules/vertx-tcp-eventbus-bridge</module>
     <module>modules/vertx-circuit-breaker</module>
@@ -91,7 +90,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.5.0.Beta1</version>
+            <version>3.5.0</version>
           </dependencies>
         </configuration>
       </plugin>
