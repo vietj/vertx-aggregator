@@ -32,13 +32,27 @@ Now change the version of all modules with the releaser plugin
 ### Deploy components
 
 ```
-mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests
+mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltReleaseDeploymentRepository=local::default::http://localhost:8080/repo
+```
+
+### Deploy Scala
+
+Change version
+
+```
+mvn versions:set -DnewVersion=3.0.0-milestoneX
+```
+
+Deploy
+
+```
+mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltDeploymentRepository=local::default::http://localhost:8080/repo
 ```
 
 ### Deploy stack
 
 ```
-mvn deploy -Dgpg.passphrase="my pass phrase" -DskipDocker -DskipNpm -DskipTests -Psonatype-oss-release
+mvn deploy -Psonatype-oss-release -DskipDocker -DskipNpm -DskipTests  -Dgpg.passphrase="my pass phrase" -DaltDeploymentRepository=local::default::http://localhost:8080/repo
 ```
 
 Now this is staged in Nexus
@@ -77,3 +91,7 @@ And also for vertx-dependencies of course.
 ## Releaser plugin
 
 Install the releaser plugin https://github.com/vietj/releaser-maven-plugin if you don't have it
+
+## Staging proxy
+
+stagingProfileId=198f9fdcad2785
