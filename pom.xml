@@ -62,9 +62,7 @@
     <module>modules/vertx-tcp-eventbus-bridge</module>
     <module>modules/vertx-circuit-breaker</module>
     <module>modules/vertx-service-discovery</module>
-    <!--
     <module>modules/vertx-ignite</module>
-    -->
     <module>modules/vertx-rabbitmq-client</module>
     <module>modules/vertx-proton</module>
     <module>modules/vertx-amqp-bridge</module>
