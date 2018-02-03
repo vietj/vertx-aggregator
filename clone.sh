@@ -16,6 +16,7 @@ git clone --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-l
 
 # Base
 git clone --depth 1 git@github.com:vert-x3/vertx-unit.git modules/vertx-unit
+git clone --depth 1 git@github.com:vert-x3/vertx-junit5.git modules/vertx-junit5
 git clone --depth 1 git@github.com:vert-x3/vertx-rx.git modules/vertx-rx
 git clone --depth 1 git@github.com:vert-x3/vertx-reactive-streams.git modules/vertx-reactive-streams
 

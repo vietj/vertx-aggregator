@@ -50,6 +50,7 @@
     <module>modules/vertx-http-service-factory</module>
     <module>modules/vertx-sql-common</module>
     <module>modules/vertx-unit</module>
+    <module>modules/vertx-junit5</module>
     <module>modules/vertx-jca</module>
     <module>modules/vertx-mail-client</module>
     <module>modules/vertx-redis-client</module>

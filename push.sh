@@ -16,6 +16,7 @@ git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotl
 
 # Base
 git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags origin master
+git --git-dir=modules/vertx-junit5/.git --work-tree=modules/vertx-junit5 push --tags origin master
 git --git-dir=modules/vertx-rx/.git --work-tree=modules/vertx-rx push --tags origin master
 git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reactive-streams push --tags origin master
 
