@@ -27,12 +27,12 @@ Edit the root `pom.xml` and change the `vertx-dependencies` to `3.0.0-milestoneX
 
 Now change the version of all modules with the releaser plugin
 
-    mvn io.vertx:releaser-maven-plugin:apply
+    mvn com.julienviet:releaser-maven-plugin:apply
 
 ### Deploy components
 
 ```
-mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltReleaseDeploymentRepository=local::default::http://localhost:8080/repo
+mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltReleaseDeploymentRepository=local::default::http://localhost:8080/
 ```
 
 ### Deploy Scala
@@ -46,7 +46,7 @@ mvn versions:set -DnewVersion=3.0.0-milestoneX
 Deploy
 
 ```
-mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltDeploymentRepository=local::default::http://localhost:8080/repo
+> mvn deploy -Psonatype-oss-release -Dgpg.passphrase="my pass phrase" -DskipTests -DaltDeploymentRepository=local::default::http://localhost:8080/
 ```
 
 ### Deploy stack
@@ -63,11 +63,11 @@ When we are sure everything is ok (Nexus checked, components checked, ...)
 
 Commit all components, this performs a `git commit` on all modules with the message _Releasing 3.0.0-milestoneX_
 
-    mvn io.vertx:releaser-maven-plugin:release
+    mvn com.julienviet:releaser-maven-plugin:release
 
 Then tag the release
 
-    mvn io.vertx:releaser-maven-plugin:tag
+    mvn com.julienviet:releaser-maven-plugin:tag
 
 This adds the tag `3.0.0-milestoneX` to each module
 
@@ -76,8 +76,8 @@ This adds the tag `3.0.0-milestoneX` to each module
 Edit the root `pom.xml` and change the `vertx-dependencies` to `3.0.0-SNAPSHOT` in the releaser plugin and perform
 
 ```
-mvn io.vertx:releaser-maven-plugin:apply
-mvn io.vertx:releaser-maven-plugin:release
+mvn com.julienviet:releaser-maven-plugin:apply
+mvn com.julienviet:releaser-maven-plugin:release
 ```
 
 ### Push everything back to their respective repos
