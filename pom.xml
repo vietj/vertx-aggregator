@@ -30,7 +30,6 @@
     <module>modules/vertx-codegen</module>
     <module>modules/vertx-codetrans</module>
     <module>modules/vertx-embedded-mongo-db</module>
-    <module>modules/vertx-embedded-mongo-db</module>
     <module>modules/vertx-hazelcast</module>
     <module>modules/vertx-jdbc-client</module>
     <module>modules/vertx-mysql-postgresql-client</module>
@@ -93,7 +92,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.6.0-SNAPSHOT</version>
+            <version>3.5.2.CR1</version>
           </dependencies>
         </configuration>
       </plugin>
