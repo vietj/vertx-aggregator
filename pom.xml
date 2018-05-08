@@ -29,7 +29,7 @@
     <module>modules/vertx-auth</module>
     <module>modules/vertx-codegen</module>
     <module>modules/vertx-codetrans</module>
-    <module>modules/vertx-docgen</module>
+    <module>modules/vertx-embedded-mongo-db</module>
     <module>modules/vertx-embedded-mongo-db</module>
     <module>modules/vertx-hazelcast</module>
     <module>modules/vertx-jdbc-client</module>
@@ -40,6 +40,7 @@
     <module>modules/vertx-lang-ceylon</module>
     <module>modules/vertx-lang-kotlin</module>
     <module>modules/vertx-dropwizard-metrics</module>
+    <module>modules/vertx-micrometer-metrics</module>
     <module>modules/vertx-hawkular-metrics</module>
     <module>modules/vertx-mongo-client</module>
     <module>modules/vertx-reactive-streams</module>
@@ -74,6 +75,7 @@
     <module>modules/vertx-grpc</module>
     <module>modules/vertx-kafka-client</module>
     <module>modules/vertx-health-check</module>
+    <module>modules/vertx-client-services</module>
   </modules>
 
   <build>
