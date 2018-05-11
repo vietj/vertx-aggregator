@@ -92,7 +92,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.5.2.CR1</version>
+            <version>3.5.2-SNAPSHOT</version>
           </dependencies>
         </configuration>
       </plugin>
