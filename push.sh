@@ -1,4 +1,4 @@
-branch='3.5'
+branch='master'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
@@ -11,7 +11,6 @@ git --git-dir=modules/vert.x/.git --work-tree=modules/vert.x push --tags origin 
 git --git-dir=modules/vertx-lang-js/.git --work-tree=modules/vertx-lang-js push --tags origin $branch
 git --git-dir=modules/vertx-lang-groovy/.git --work-tree=modules/vertx-lang-groovy push --tags origin $branch
 git --git-dir=modules/vertx-lang-ruby/.git --work-tree=modules/vertx-lang-ruby push --tags origin $branch
-git --git-dir=modules/vertx-lang-ceylon/.git --work-tree=modules/vertx-lang-ceylon push --tags origin $branch
 git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotlin push --tags origin $branch
 
 # Base
@@ -24,7 +23,6 @@ git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reac
 git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin $branch
 git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin $branch
 git --git-dir=modules/vertx-micrometer-metrics/.git --work-tree=modules/vertx-micrometer-metrics push --tags origin $branch
-git --git-dir=modules/vertx-hawkular-metrics/.git --work-tree=modules/vertx-hawkular-metrics push --tags origin $branch
 git --git-dir=modules/vertx-health-check/.git --work-tree=modules/vertx-health-check push --tags origin $branch
 
 # Programming

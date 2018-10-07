@@ -36,11 +36,9 @@
     <module>modules/vertx-lang-groovy</module>
     <module>modules/vertx-lang-js</module>
     <module>modules/vertx-lang-ruby</module>
-    <module>modules/vertx-lang-ceylon</module>
     <module>modules/vertx-lang-kotlin</module>
     <module>modules/vertx-dropwizard-metrics</module>
     <module>modules/vertx-micrometer-metrics</module>
-    <module>modules/vertx-hawkular-metrics</module>
     <module>modules/vertx-mongo-client</module>
     <module>modules/vertx-reactive-streams</module>
     <module>modules/vertx-rx</module>

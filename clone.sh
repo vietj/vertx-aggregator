@@ -1,4 +1,4 @@
-branch='3.5'
+branch='master'
 
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen
@@ -11,7 +11,6 @@ git clone -b $branch --depth 1 git@github.com:eclipse/vert.x.git modules/vert.x
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-js.git modules/vertx-lang-js
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-groovy.git modules/vertx-lang-groovy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-ruby.git modules/vertx-lang-ruby
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-ceylon.git modules/vertx-lang-ceylon
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-lang-kotlin
 
 # Base
@@ -24,7 +23,6 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-reactive-streams.git
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-dropwizard-metrics.git modules/vertx-dropwizard-metrics
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-micrometer-metrics.git modules/vertx-micrometer-metrics
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-hawkular-metrics.git modules/vertx-hawkular-metrics
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-health-check.git modules/vertx-health-check
 
 # Programming
