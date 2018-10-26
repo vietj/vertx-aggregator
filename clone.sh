@@ -61,6 +61,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mail-client.git modu
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-rabbitmq-client.git modules/vertx-rabbitmq-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-kafka-client.git modules/vertx-kafka-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-consul-client.git modules/vertx-consul-client
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-cassandra-client.git modules/vertx-cassandra-client
 
 # Messaging & Integration
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-bridge-common.git modules/vertx-bridge-common

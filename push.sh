@@ -61,6 +61,7 @@ git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-clie
 git --git-dir=modules/vertx-rabbitmq-client/.git --work-tree=modules/vertx-rabbitmq-client push --tags origin $branch
 git --git-dir=modules/vertx-kafka-client/.git --work-tree=modules/vertx-kafka-client push --tags origin $branch
 git --git-dir=modules/vertx-consul-client/.git --work-tree=modules/vertx-consul-client push --tags origin $branch
+git --git-dir=modules/vertx-cassandra-client/.git --work-tree=modules/vertx-cassandra-client push --tags origin $branch
 
 # Messaging & Integration
 git --git-dir=modules/vertx-bridge-common/.git --work-tree=modules/vertx-bridge-common push --tags origin $branch
