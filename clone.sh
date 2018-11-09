@@ -34,6 +34,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-factory.git 
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-maven-service-factory.git modules/vertx-maven-service-factory
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-http-service-factory.git modules/vertx-http-service-factory
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx-service-proxy
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sockjs-service-proxy.git modules/vertx-sockjs-service-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-client-services.git modules/vertx-client-services

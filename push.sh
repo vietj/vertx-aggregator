@@ -34,6 +34,7 @@ git --git-dir=modules/vertx-service-factory/.git --work-tree=modules/vertx-servi
 git --git-dir=modules/vertx-maven-service-factory/.git --work-tree=modules/vertx-maven-service-factory push --tags origin $branch
 git --git-dir=modules/vertx-http-service-factory/.git --work-tree=modules/vertx-http-service-factory push --tags origin $branch
 git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service-proxy push --tags origin $branch
+git --git-dir=modules/vertx-sockjs-service-proxy/.git --work-tree=modules/vertx-sockjs-service-proxy push --tags origin $branch
 git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin $branch
 git --git-dir=modules/vertx-grpc/.git --work-tree=modules/vertx-grpc push --tags origin $branch
 git --git-dir=modules/vertx-client-services/.git --work-tree=modules/vertx-client-services push --tags origin $branch

@@ -44,6 +44,7 @@
     <module>modules/vertx-rx</module>
     <module>modules/vertx-service-factory</module>
     <module>modules/vertx-service-proxy</module>
+    <module>modules/vertx-sockjs-service-proxy</module>
     <module>modules/vertx-maven-service-factory</module>
     <module>modules/vertx-http-service-factory</module>
     <module>modules/vertx-sql-common</module>
