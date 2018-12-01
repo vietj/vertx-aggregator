@@ -37,7 +37,6 @@ git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service
 git --git-dir=modules/vertx-sockjs-service-proxy/.git --work-tree=modules/vertx-sockjs-service-proxy push --tags origin $branch
 git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin $branch
 git --git-dir=modules/vertx-grpc/.git --work-tree=modules/vertx-grpc push --tags origin $branch
-git --git-dir=modules/vertx-client-services/.git --work-tree=modules/vertx-client-services push --tags origin $branch
 
 # IoT
 git --git-dir=modules/vertx-mqtt/.git --work-tree=modules/vertx-mqtt push --tags origin $branch
@@ -54,8 +53,6 @@ git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags
 # Clients
 git --git-dir=modules/vertx-sql-common/.git --work-tree=modules/vertx-sql-common push --tags origin $branch
 git --git-dir=modules/vertx-jdbc-client/.git --work-tree=modules/vertx-jdbc-client push --tags origin $branch
-git --git-dir=modules/vertx-mysql-postgresql-client/.git --work-tree=modules/vertx-mysql-postgresql-client push --tags origin $branch
-git --git-dir=modules/vertx-embedded-mongo-db/.git --work-tree=modules/vertx-embedded-mongo-db push --tags origin $branch
 git --git-dir=modules/vertx-mongo-client/.git --work-tree=modules/vertx-mongo-client push --tags origin $branch
 git --git-dir=modules/vertx-redis-client/.git --work-tree=modules/vertx-redis-client push --tags origin $branch
 git --git-dir=modules/vertx-mail-client/.git --work-tree=modules/vertx-mail-client push --tags origin $branch
@@ -68,9 +65,7 @@ git --git-dir=modules/vertx-cassandra-client/.git --work-tree=modules/vertx-cass
 git --git-dir=modules/vertx-bridge-common/.git --work-tree=modules/vertx-bridge-common push --tags origin $branch
 git --git-dir=modules/vertx-tcp-eventbus-bridge/.git --work-tree=modules/vertx-tcp-eventbus-bridge push --tags origin $branch
 git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp push --tags origin $branch
-git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca push --tags origin $branch
 git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton push --tags origin $branch
-git --git-dir=modules/vertx-amqp-bridge/.git --work-tree=modules/vertx-amqp-bridge push --tags origin $branch
 git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge push --tags origin $branch
 
 # Web

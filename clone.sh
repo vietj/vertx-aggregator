@@ -37,7 +37,6 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-proxy.git mo
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sockjs-service-proxy.git modules/vertx-sockjs-service-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-client-services.git modules/vertx-client-services
 
 # IoT
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mqtt.git modules/vertx-mqtt
@@ -54,8 +53,6 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-auth.git modules/ver
 # Clients
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sql-common.git modules/vertx-sql-common
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-jdbc-client.git modules/vertx-jdbc-client
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mysql-postgresql-client.git modules/vertx-mysql-postgresql-client
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-embedded-mongo-db.git modules/vertx-embedded-mongo-db
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mongo-client.git modules/vertx-mongo-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-redis-client.git modules/vertx-redis-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mail-client.git modules/vertx-mail-client
@@ -68,9 +65,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-cassandra-client.git
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-bridge-common.git modules/vertx-bridge-common
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-tcp-eventbus-bridge.git modules/vertx-tcp-eventbus-bridge
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-stomp.git modules/vertx-stomp
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-proton.git modules/vertx-proton
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-amqp-bridge.git modules/vertx-amqp-bridge
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-camel-bridge
 
 # Web
