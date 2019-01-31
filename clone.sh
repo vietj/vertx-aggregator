@@ -1,4 +1,4 @@
-branch='3.6'
+branch='3.7'
 
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen

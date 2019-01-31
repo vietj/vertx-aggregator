@@ -1,4 +1,4 @@
-branch='3.6'
+branch='3.7'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
