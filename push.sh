@@ -66,6 +66,7 @@ git --git-dir=modules/vertx-bridge-common/.git --work-tree=modules/vertx-bridge-
 git --git-dir=modules/vertx-tcp-eventbus-bridge/.git --work-tree=modules/vertx-tcp-eventbus-bridge push --tags origin $branch
 git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp push --tags origin $branch
 git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton push --tags origin $branch
+git --git-dir=modules/vertx-amqp-client/.git --work-tree=modules/vertx-amqp-client push --tags origin $branch
 git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge push --tags origin $branch
 
 # Web
