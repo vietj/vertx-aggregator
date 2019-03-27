@@ -66,6 +66,7 @@
     <module>modules/vertx-rabbitmq-client</module>
     <module>modules/vertx-proton</module>
     <module>modules/vertx-amqp-bridge</module>
+    <module>modules/vertx-amqp-client</module>
     <module>modules/vertx-camel-bridge</module>
     <module>modules/vertx-mqtt</module>
     <module>modules/vertx-consul-client</module>

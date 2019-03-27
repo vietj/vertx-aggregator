@@ -71,6 +71,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-stomp.git modules/ve
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-jca.git modules/vertx-jca
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-proton.git modules/vertx-proton
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-amqp-bridge.git modules/vertx-amqp-bridge
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-amqp-client.git modules/vertx-amqp-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-camel-bridge
 
 # Web
