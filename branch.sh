@@ -1,4 +1,4 @@
-branch='3.7'
+branch='3.8'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen checkout -b $branch
@@ -71,6 +71,7 @@ git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp checkout 
 git --git-dir=modules/vertx-jca/.git --work-tree=modules/vertx-jca checkout -b $branch
 git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton checkout -b $branch
 git --git-dir=modules/vertx-amqp-bridge/.git --work-tree=modules/vertx-amqp-bridge checkout -b $branch
+git --git-dir=modules/vertx-amqp-client/.git --work-tree=modules/vertx-amqp-client checkout -b $branch
 git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge checkout -b $branch
 
 # Web
