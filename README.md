@@ -63,7 +63,7 @@ When we are sure everything is ok (Nexus checked, components checked, ...)
 
 Commit all components, this performs a `git commit` on all modules with the message _Releasing 3.0.0-milestoneX_
 
-    mvn com.julienviet:releaser-maven-plugin:release
+    mvn com.julienviet:releaser-maven-plugin:commit
 
 Then tag the release
 
@@ -77,7 +77,7 @@ Edit the root `pom.xml` and change the `vertx-dependencies` to `3.0.0-SNAPSHOT` 
 
 ```
 mvn com.julienviet:releaser-maven-plugin:apply
-mvn com.julienviet:releaser-maven-plugin:release
+mvn com.julienviet:releaser-maven-plugin:commit
 ```
 
 ### Push everything back to their respective repos
