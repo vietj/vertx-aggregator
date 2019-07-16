@@ -55,6 +55,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-auth.git modules/ver
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sql-common.git modules/vertx-sql-common
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-jdbc-client.git modules/vertx-jdbc-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mysql-postgresql-client.git modules/vertx-mysql-postgresql-client
+git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-sql-client.git modules/vertx-sql-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-embedded-mongo-db.git modules/vertx-embedded-mongo-db
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mongo-client.git modules/vertx-mongo-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-redis-client.git modules/vertx-redis-client
