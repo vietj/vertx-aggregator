@@ -31,6 +31,7 @@
     <module>modules/vertx-codetrans</module>
     <module>modules/vertx-hazelcast</module>
     <module>modules/vertx-jdbc-client</module>
+    <module>modules/vertx-sql-client</module>
     <module>modules/vertx-lang-groovy</module>
     <module>modules/vertx-lang-js</module>
     <module>modules/vertx-lang-ruby</module>
