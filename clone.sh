@@ -19,11 +19,14 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-junit5.git modules/v
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-rx.git modules/vertx-rx
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-reactive-streams.git modules/vertx-reactive-streams
 
-# Devops
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
+# Observability
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-dropwizard-metrics.git modules/vertx-dropwizard-metrics
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-micrometer-metrics.git modules/vertx-micrometer-metrics
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-health-check.git modules/vertx-health-check
+git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-tracing.git modules/vertx-tracing
+
+# Devops
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
 
 # Programming
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sync.git modules/vertx-sync

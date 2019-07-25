@@ -19,11 +19,14 @@ git --git-dir=modules/vertx-junit5/.git --work-tree=modules/vertx-junit5 push --
 git --git-dir=modules/vertx-rx/.git --work-tree=modules/vertx-rx push --tags origin $branch
 git --git-dir=modules/vertx-reactive-streams/.git --work-tree=modules/vertx-reactive-streams push --tags origin $branch
 
-# Devops
-git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin $branch
+# Observability
 git --git-dir=modules/vertx-dropwizard-metrics/.git --work-tree=modules/vertx-dropwizard-metrics push --tags origin $branch
 git --git-dir=modules/vertx-micrometer-metrics/.git --work-tree=modules/vertx-micrometer-metrics push --tags origin $branch
 git --git-dir=modules/vertx-health-check/.git --work-tree=modules/vertx-health-check push --tags origin $branch
+git --git-dir=modules/vertx-tracing/.git --work-tree=modules/vertx-tracing push --tags origin $branch
+
+# Devops
+git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin $branch
 
 # Programming
 git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin $branch

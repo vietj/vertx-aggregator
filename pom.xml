@@ -38,6 +38,7 @@
     <module>modules/vertx-lang-kotlin</module>
     <module>modules/vertx-dropwizard-metrics</module>
     <module>modules/vertx-micrometer-metrics</module>
+    <module>modules/vertx-tracing</module>
     <module>modules/vertx-mongo-client</module>
     <module>modules/vertx-reactive-streams</module>
     <module>modules/vertx-rx</module>
