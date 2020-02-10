@@ -1,4 +1,4 @@
-branch='3.8'
+branch='3.9'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen checkout -b $branch
