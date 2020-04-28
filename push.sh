@@ -8,9 +8,7 @@ git --git-dir=modules/vertx-codetrans/.git --work-tree=modules/vertx-codetrans p
 git --git-dir=modules/vert.x/.git --work-tree=modules/vert.x push --tags origin $branch
 
 # Lang
-git --git-dir=modules/vertx-lang-js/.git --work-tree=modules/vertx-lang-js push --tags origin $branch
 git --git-dir=modules/vertx-lang-groovy/.git --work-tree=modules/vertx-lang-groovy push --tags origin $branch
-git --git-dir=modules/vertx-lang-ruby/.git --work-tree=modules/vertx-lang-ruby push --tags origin $branch
 git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotlin push --tags origin $branch
 
 # Base

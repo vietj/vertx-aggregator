@@ -8,9 +8,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codetrans.git module
 git clone -b $branch --depth 1 git@github.com:eclipse/vert.x.git modules/vert.x
 
 # Lang
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-js.git modules/vertx-lang-js
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-groovy.git modules/vertx-lang-groovy
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-ruby.git modules/vertx-lang-ruby
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-lang-kotlin
 
 # Base
