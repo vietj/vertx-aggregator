@@ -71,6 +71,9 @@ git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton push --
 git --git-dir=modules/vertx-amqp-client/.git --work-tree=modules/vertx-amqp-client push --tags origin $branch
 git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-bridge push --tags origin $branch
 
+# Json Schema
+git --git-dir=modules/vertx-json-schema/.git --work-tree=modules/vertx-json-schema push --tags origin $branch
+
 # Web
 git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags origin $branch
 

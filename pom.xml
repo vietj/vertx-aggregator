@@ -25,6 +25,7 @@
 
   <modules>
     <module>modules/vert.x</module>
+    <module>modules/vertx-json-schema</module>
     <module>modules/vertx-web</module>
     <module>modules/vertx-auth</module>
     <module>modules/vertx-codegen</module>
