@@ -54,7 +54,7 @@
     <module>modules/vertx-sync</module>
     <module>modules/vertx-shell</module>
     <module>modules/vertx-infinispan</module>
-    <module>modules/vertx-zookeeper</module>
+    <!-- <module>modules/vertx-zookeeper</module> -->
     <module>modules/vertx-bridge-common</module>
     <module>modules/vertx-tcp-eventbus-bridge</module>
     <module>modules/vertx-circuit-breaker</module>
