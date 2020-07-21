@@ -52,7 +52,6 @@ git --git-dir=modules/vertx-zookeeper/.git --work-tree=modules/vertx-zookeeper p
 git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin $branch
 
 # Clients
-git --git-dir=modules/vertx-sql-common/.git --work-tree=modules/vertx-sql-common push --tags origin $branch
 git --git-dir=modules/vertx-jdbc-client/.git --work-tree=modules/vertx-jdbc-client push --tags origin $branch
 git --git-dir=modules/vertx-sql-client/.git --work-tree=modules/vertx-sql-client push --tags origin $branch
 git --git-dir=modules/vertx-mongo-client/.git --work-tree=modules/vertx-mongo-client push --tags origin $branch
