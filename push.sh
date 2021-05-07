@@ -1,4 +1,5 @@
 branch='master'
+branch2='main'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
@@ -74,6 +75,7 @@ git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-br
 git --git-dir=modules/vertx-json-schema/.git --work-tree=modules/vertx-json-schema push --tags origin $branch
 
 # Web
+git --git-dir=modules/vertx-http-proxy/.git --work-tree=modules/vertx-http-proxy push --tags origin $branch2
 git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags origin $branch
 
 # Other

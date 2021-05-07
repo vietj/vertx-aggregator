@@ -1,11 +1,12 @@
 branch='master'
+branch2='main'
 
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codetrans.git modules/vertx-codetrans
 
 # Vert.x
-git clone -b $branch --depth 1 git@github.com:eclipse/vert.x.git modules/vert.x
+git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vert.x.git modules/vert.x
 
 # Lang
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-groovy.git modules/vertx-lang-groovy
@@ -74,6 +75,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git mod
 git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-json-schema.git modules/vertx-json-schema
 
 # Web
+git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-http-proxy.git modules/vertx-http-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web
 
 # Other

@@ -71,6 +71,7 @@
     <module>modules/vertx-grpc</module>
     <module>modules/vertx-kafka-client</module>
     <module>modules/vertx-health-check</module>
+    <module>modules/vertx-http-proxy</module>
   </modules>
 
   <build>
