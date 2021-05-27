@@ -3,7 +3,6 @@ branch2='main'
 
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codetrans.git modules/vertx-codetrans
 
 # Vert.x
 git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vert.x.git modules/vert.x

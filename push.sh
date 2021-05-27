@@ -3,7 +3,6 @@ branch2='main'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
-git --git-dir=modules/vertx-codetrans/.git --work-tree=modules/vertx-codetrans push --tags origin $branch
 
 # Vert.x
 git --git-dir=modules/vert.x/.git --work-tree=modules/vert.x push --tags origin $branch
