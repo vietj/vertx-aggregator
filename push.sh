@@ -1,5 +1,5 @@
-branch='master'
-branch2='main'
+branch='4.1'
+branch2='4.1'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
