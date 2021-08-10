@@ -88,7 +88,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>4.1.2-SNAPSHOT</version>
+            <version>4.1.3-SNAPSHOT</version>
           </dependencies>
         </configuration>
       </plugin>
