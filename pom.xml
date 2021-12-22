@@ -94,7 +94,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>3.9.12-SNAPSHOT</version>
+            <version>3.9.13-SNAPSHOT</version>
           </dependencies>
         </configuration>
       </plugin>
