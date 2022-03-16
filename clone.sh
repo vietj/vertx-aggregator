@@ -1,5 +1,5 @@
-branch='master'
-branch2='main'
+branch='4.2'
+branch2='4.2'
 
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen
