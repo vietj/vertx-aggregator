@@ -37,7 +37,8 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-http-service-factory
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-proxy.git modules/vertx-service-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sockjs-service-proxy.git modules/vertx-sockjs-service-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-service-discovery.git modules/vertx-service-discovery
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-grpc.git modules/vertx-grpc-netty
+git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-grpc.git modules/vertx-grpc
 
 # IoT
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-mqtt.git modules/vertx-mqtt
@@ -74,6 +75,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git mod
 git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-json-schema.git modules/vertx-json-schema
 
 # Web
+git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-uri-template.git modules/vertx-uri-template
 git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-http-proxy.git modules/vertx-http-proxy
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-web.git modules/vertx-web
 
