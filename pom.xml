@@ -26,9 +26,11 @@
   <modules>
     <module>modules/vert.x</module>
     <module>modules/vertx-json-schema</module>
+    <module>modules/vertx-openapi</module>
     <module>modules/vertx-uri-template</module>
     <module>modules/vertx-web</module>
-    <module>modules/vertx-auth</module>
+    <module>modules/vertx-auth-1</module>
+    <module>modules/vertx-auth-2</module>
     <module>modules/vertx-codegen</module>
     <module>modules/vertx-hazelcast</module>
     <module>modules/vertx-jdbc-client</module>

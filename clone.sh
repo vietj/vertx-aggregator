@@ -50,7 +50,8 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-ignite.git modules/v
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-zookeeper.git modules/vertx-zookeeper
 
 # Security
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-auth.git modules/vertx-auth-1
+git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-auth.git modules/vertx-auth-2
 
 # Clients
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-jdbc-client.git modules/vertx-jdbc-client
@@ -71,8 +72,9 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-proton.git modules/v
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-amqp-client.git modules/vertx-amqp-client
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-camel-bridge.git modules/vertx-camel-bridge
 
-# Json Schema
+# Open API
 git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-json-schema.git modules/vertx-json-schema
+git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-openapi.git modules/vertx-openapi
 
 # Web
 git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-uri-template.git modules/vertx-uri-template

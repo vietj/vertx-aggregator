@@ -50,7 +50,8 @@ git --git-dir=modules/vertx-ignite/.git --work-tree=modules/vertx-ignite push --
 git --git-dir=modules/vertx-zookeeper/.git --work-tree=modules/vertx-zookeeper push --tags origin $branch
 
 # Security
-git --git-dir=modules/vertx-auth/.git --work-tree=modules/vertx-auth push --tags origin $branch
+git --git-dir=modules/vertx-auth-1/.git --work-tree=modules/vertx-auth-1 push --tags origin $branch
+git --git-dir=modules/vertx-auth-1/.git --work-tree=modules/vertx-auth-1 push --tags origin $branch
 
 # Clients
 git --git-dir=modules/vertx-jdbc-client/.git --work-tree=modules/vertx-jdbc-client push --tags origin $branch
@@ -73,6 +74,7 @@ git --git-dir=modules/vertx-camel-bridge/.git --work-tree=modules/vertx-camel-br
 
 # Json Schema
 git --git-dir=modules/vertx-json-schema/.git --work-tree=modules/vertx-json-schema push --tags origin $branch
+git --git-dir=modules/vertx-openapi/.git --work-tree=modules/vertx-openapi push --tags origin $branch2
 
 # Web
 git --git-dir=modules/vertx-uri-template/.git --work-tree=modules/vertx-uri-template push --tags origin $branch2
