@@ -1,5 +1,5 @@
-branch='master'
-branch2='main'
+branch='4.4'
+branch2='4.4'
 
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
@@ -51,7 +51,7 @@ git --git-dir=modules/vertx-zookeeper/.git --work-tree=modules/vertx-zookeeper p
 
 # Security
 git --git-dir=modules/vertx-auth-1/.git --work-tree=modules/vertx-auth-1 push --tags origin $branch
-git --git-dir=modules/vertx-auth-1/.git --work-tree=modules/vertx-auth-1 push --tags origin $branch
+git --git-dir=modules/vertx-auth-2/.git --work-tree=modules/vertx-auth-2 push --tags origin $branch
 
 # Clients
 git --git-dir=modules/vertx-jdbc-client/.git --work-tree=modules/vertx-jdbc-client push --tags origin $branch
