@@ -75,6 +75,7 @@
     <module>modules/vertx-kafka-client</module>
     <module>modules/vertx-health-check</module>
     <module>modules/vertx-http-proxy</module>
+    <module>modules/vertx-io_uring-incubator</module>
   </modules>
 
   <build>

@@ -83,3 +83,6 @@ git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags o
 
 # Other
 git --git-dir=modules/vertx-config/.git --work-tree=modules/vertx-config push --tags origin $branch
+
+# Incubation
+git --git-dir=modules/vertx-io_uring-incubator/.git --work-tree=modules/vertx-io_uring-incubator push --tags origin $branch2
