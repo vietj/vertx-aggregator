@@ -27,13 +27,9 @@ git --git-dir=modules/vertx-tracing/.git --work-tree=modules/vertx-tracing push 
 git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin $branch
 
 # Programming
-git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin $branch
 git --git-dir=modules/vertx-circuit-breaker/.git --work-tree=modules/vertx-circuit-breaker push --tags origin $branch
 
 # Service
-git --git-dir=modules/vertx-service-factory/.git --work-tree=modules/vertx-service-factory push --tags origin $branch
-git --git-dir=modules/vertx-maven-service-factory/.git --work-tree=modules/vertx-maven-service-factory push --tags origin $branch
-git --git-dir=modules/vertx-http-service-factory/.git --work-tree=modules/vertx-http-service-factory push --tags origin $branch
 git --git-dir=modules/vertx-service-proxy/.git --work-tree=modules/vertx-service-proxy push --tags origin $branch
 git --git-dir=modules/vertx-sockjs-service-proxy/.git --work-tree=modules/vertx-sockjs-service-proxy push --tags origin $branch
 git --git-dir=modules/vertx-service-discovery/.git --work-tree=modules/vertx-service-discovery push --tags origin $branch

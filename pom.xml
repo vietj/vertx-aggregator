@@ -43,17 +43,13 @@
     <module>modules/vertx-mongo-client</module>
     <module>modules/vertx-reactive-streams</module>
     <module>modules/vertx-rx</module>
-    <module>modules/vertx-service-factory</module>
     <module>modules/vertx-service-proxy</module>
     <module>modules/vertx-sockjs-service-proxy</module>
-    <module>modules/vertx-maven-service-factory</module>
-    <module>modules/vertx-http-service-factory</module>
     <module>modules/vertx-unit</module>
     <module>modules/vertx-junit5</module>
     <module>modules/vertx-mail-client</module>
     <module>modules/vertx-redis-client</module>
     <module>modules/vertx-stomp</module>
-    <module>modules/vertx-sync</module>
     <module>modules/vertx-shell</module>
     <module>modules/vertx-infinispan</module>
     <module>modules/vertx-zookeeper</module>
