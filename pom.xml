@@ -25,6 +25,7 @@
 
   <modules>
     <module>modules/vert.x</module>
+    <module>modules/vertx-launcher</module>
     <module>modules/vertx-json-schema</module>
     <module>modules/vertx-openapi</module>
     <module>modules/vertx-uri-template</module>
