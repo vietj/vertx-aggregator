@@ -12,6 +12,7 @@ git --git-dir=modules/vertx-lang-groovy/.git --work-tree=modules/vertx-lang-groo
 git --git-dir=modules/vertx-lang-kotlin/.git --work-tree=modules/vertx-lang-kotlin push --tags origin $branch
 
 # Base
+git --git-dir=modules/vertx-service-resolver/.git --work-tree=modules/vertx-service-resolver push --tags origin $branch2
 git --git-dir=modules/vertx-launcher/.git --work-tree=modules/vertx-launcher push --tags origin $branch2
 git --git-dir=modules/vertx-unit/.git --work-tree=modules/vertx-unit push --tags origin $branch
 git --git-dir=modules/vertx-junit5/.git --work-tree=modules/vertx-junit5 push --tags origin $branch

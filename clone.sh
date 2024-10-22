@@ -12,6 +12,7 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-groovy.git modu
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-lang-kotlin.git modules/vertx-lang-kotlin
 
 # Base
+git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-service-resolver.git modules/vertx-service-resolver
 git clone -b $branch2 --depth 1 git@github.com:eclipse-vertx/vertx-launcher.git modules/vertx-launcher
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-unit.git modules/vertx-unit
 git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-junit5.git modules/vertx-junit5
