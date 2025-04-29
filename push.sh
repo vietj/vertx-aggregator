@@ -1,6 +1,9 @@
 branch='master'
 branch2='main'
 
+# Dependencies
+git --git-dir=modules/vertx-dependencies/.git --work-tree=modules/vertx-dependencies push --tags origin $branch
+
 # Tools
 git --git-dir=modules/vertx-codegen/.git --work-tree=modules/vertx-codegen push --tags origin $branch
 

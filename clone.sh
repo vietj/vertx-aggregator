@@ -1,6 +1,9 @@
 branch='master'
 branch2='main'
 
+# Dependencies
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-dependencies.git modules/vertx-dependencies
+
 # Tools
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-codegen.git modules/vertx-codegen
 

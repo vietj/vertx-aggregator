@@ -24,6 +24,7 @@
   </distributionManagement>
 
   <modules>
+    <module>modules/vertx-dependencies</module>
     <module>modules/vert.x</module>
     <module>modules/vertx-service-resolver</module>
     <module>modules/vertx-launcher</module>
@@ -90,7 +91,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0.CR8</version>
           </dependencies>
         </configuration>
       </plugin>
