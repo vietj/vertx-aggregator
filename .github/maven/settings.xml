@@ -24,6 +24,11 @@
       <username>${env.CENTRAL_USERNAME}</username>
       <password>${env.CENTRAL_PASSWORD}</password>
     </server>
+    <server>
+      <id>vertx-snapshots-repository</id>
+      <username>${env.CENTRAL_USERNAME}</username>
+      <password>${env.CENTRAL_PASSWORD}</password>
+    </server>
   </servers>
 
 </settings>
