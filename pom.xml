@@ -37,6 +37,10 @@
     </snapshotRepository>
   </distributionManagement>
 
+  <properties>
+    <vertx.version>0.0.0</vertx.version>
+  </properties>
+
   <modules>
     <module>modules/vertx-dependencies</module>
     <module>modules/vert.x</module>
@@ -105,7 +109,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>5.0.0.CR8</version>
+            <version>${vertx.version}</version>
           </dependencies>
         </configuration>
       </plugin>
