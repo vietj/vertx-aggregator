@@ -23,6 +23,10 @@
     </snapshotRepository>
   </distributionManagement>
 
+  <properties>
+    <vertx.version>0.0.0</vertx.version>
+  </properties>
+
   <modules>
     <module>modules/vert.x</module>
     <module>modules/vertx-json-schema</module>
@@ -93,7 +97,7 @@
           <dependencies>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-dependencies</artifactId>
-            <version>4.5.15-SNAPSHOT</version>
+            <version>${vertx.version}</version>
           </dependencies>
         </configuration>
       </plugin>
