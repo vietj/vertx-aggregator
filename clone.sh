@@ -30,7 +30,6 @@ git clone -b $branch --depth 1 git@github.com:eclipse-vertx/vertx-tracing.git mo
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-shell.git modules/vertx-shell
 
 # Programming
-git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-sync.git modules/vertx-sync
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-circuit-breaker.git modules/vertx-circuit-breaker
 
 # Service

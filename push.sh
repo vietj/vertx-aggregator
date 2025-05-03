@@ -30,7 +30,6 @@ git --git-dir=modules/vertx-tracing/.git --work-tree=modules/vertx-tracing push 
 git --git-dir=modules/vertx-shell/.git --work-tree=modules/vertx-shell push --tags origin $branch
 
 # Programming
-git --git-dir=modules/vertx-sync/.git --work-tree=modules/vertx-sync push --tags origin $branch
 git --git-dir=modules/vertx-circuit-breaker/.git --work-tree=modules/vertx-circuit-breaker push --tags origin $branch
 
 # Service

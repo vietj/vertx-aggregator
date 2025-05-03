@@ -57,7 +57,6 @@
     <module>modules/vertx-mail-client</module>
     <module>modules/vertx-redis-client</module>
     <module>modules/vertx-stomp</module>
-    <module>modules/vertx-sync</module>
     <module>modules/vertx-shell</module>
     <module>modules/vertx-infinispan</module>
     <module>modules/vertx-zookeeper</module>
