@@ -28,6 +28,7 @@
   </properties>
 
   <modules>
+    <module>modules/vertx-dependencies</module>
     <module>modules/vert.x</module>
     <module>modules/vertx-json-schema</module>
     <module>modules/vertx-openapi</module>
