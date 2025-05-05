@@ -1,4 +1,5 @@
 name: "Release 5.x"
+run-name: Releasing ${{ inputs.releaseVersion }}
 on:
   workflow_dispatch:
     inputs:
