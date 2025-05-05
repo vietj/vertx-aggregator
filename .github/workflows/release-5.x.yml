@@ -14,8 +14,8 @@ jobs:
   Release:
     uses: ./.github/workflows/release.yml
     with:
-      releaseVersion: {{ inputs.releaseVersion }}
-      snapshotVersion: {{ inputs.snapshotVersion }}
+      releaseVersion: ${{ inputs.releaseVersion }}
+      snapshotVersion: ${{ inputs.snapshotVersion }}
       aggregatorBranch: master
       javaVersion: 11
     secrets: inherit
