@@ -104,7 +104,7 @@
       <plugin>
         <groupId>com.julienviet</groupId>
         <artifactId>releaser-maven-plugin</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>1.1</version>
         <configuration>
           <dependencies>
             <groupId>io.vertx</groupId>

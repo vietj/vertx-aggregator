@@ -1,0 +1,99 @@
+name: "Release"
+on:
+  workflow_dispatch:
+    inputs:
+      stableVersion:
+        description: 'Vert.x stable version, e.g 1.2.3'
+        required: true
+        type: string
+      stableSnapshotVersion:
+        description: 'Vert.x stable snapshot version, e.g. 1.2.4-SNAPSHOT'
+        required: true
+        type: string
+      aggregatorBranch:
+        description: 'Aggregator branch: master | 4.5'
+        required: true
+        type: string
+        default: 'master'
+      javaVersion:
+        description: 'Version of Java to release with: 8 | 11'
+        required: true
+        type: string
+        default: '11'
+jobs:
+  Prepare:
+    runs-on: ubuntu-latest
+    env:
+      # Needed by settings.xml
+      CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
+      CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
+      # Needed by actions/setup-java
+      MAVEN_GPG_KEY: ${{ secrets.GPG_SIGNING_KEY }}
+      MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+    steps:
+      - name: Install JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: |
+            8
+            11
+            17
+          distribution: temurin
+      - name: Set JAVA_HOME
+        run: echo "JAVA_HOME=$JAVA_HOME_${{ inputs.javaVersion }}_X64" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: vietj/vertx-aggregator
+          ref: ${{ inputs.aggregatorBranch }}
+      - name: Configure git
+        run: |
+          git config --global user.name "Julien Viet"
+          git config --global user.email "julien@julienviet.com"
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Clone
+        run: |
+          chmod +x ./clone.sh
+          ./clone.sh
+      - name: Install BOM with release version
+        run: |
+          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.stableVersion }}
+          mvn -B -f modules/vertx-dependencies/pom.xml install
+      - name: Set release version
+        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.stableVersion }}
+      - name: Commit release version
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.stableVersion }}
+      - name: Tag release version
+        run: mvn -B com.julienviet:releaser-maven-plugin:tag -Dvertx.version=${{ inputs.stableVersion }}
+      - name: Workaround (to be removed)
+        run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
+      - name: Deploy release to Sonatype Central
+        run: mvn -B -T 4 -Prelease -DskipTests -s .github/maven/settings.xml -Dgpg.signer=bc clean deploy
+      - name: Install BOM with snapshot version
+        run: |
+          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.stableSnapshotVersion }}
+          mvn -B -f modules/vertx-dependencies/pom.xml install
+      - name: Set snapshot version
+        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.stableSnapshotVersion }}
+      - name: Commit snapshot version
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.stableSnapshotVersion }}
+      - name: Workaround (to re removed)
+        run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
+      - name: Deploy snapshot to Sonatype Central
+        run: mvn -B -T 4 -DskipTests -s .github/maven/settings.xml clean deploy
+      - name: Attach artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          compression-level: 9
+          include-hidden-files: true
+          path: |
+            clone.sh
+            push.sh
+            pom.xml
+            modules
+            !modules/**/target
