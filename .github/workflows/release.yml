@@ -80,7 +80,7 @@ jobs:
       - name: Workaround (to be removed)
         run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy release to Sonatype Central
-        run: mvn -B -T 4 -Prelease -DskipTests -s .github/maven/settings.xml -Dgpg.signer=bc clean deploy
+        run: mvn -B -T 4 -Prelease -DskipTests -Dgpg.signer=bc clean deploy
       - name: Install BOM with snapshot version
         run: |
           mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.snapshotVersion }}
@@ -92,7 +92,7 @@ jobs:
       - name: Workaround (to re removed)
         run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy snapshot to Sonatype Central
-        run: mvn -B -T 4 -DskipTests -s .github/maven/settings.xml clean deploy
+        run: mvn -B -T 4 -DskipTests clean deploy
       - name: Attach artifact
         if: always()
         uses: actions/upload-artifact@v4
