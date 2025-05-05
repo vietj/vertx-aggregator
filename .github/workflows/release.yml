@@ -22,9 +22,6 @@ jobs:
   Prepare:
     runs-on: ubuntu-latest
     env:
-      # Needed by settings.xml
-      CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
-      CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
       # Needed by actions/setup-java
       MAVEN_GPG_KEY: ${{ secrets.GPG_SIGNING_KEY }}
       MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
@@ -39,6 +36,20 @@ jobs:
           distribution: temurin
       - name: Set JAVA_HOME
         run: echo "JAVA_HOME=$JAVA_HOME_${{ inputs.javaVersion }}_X64" >> $GITHUB_ENV
+      - name: Configure Maven settings
+        uses: s4u/maven-settings-action@v3.1.0
+        with:
+          githubServer: false
+          servers: |
+            [{
+              "id": "central",
+               "username": "${{ secrets.CENTRAL_USERNAME }}",
+               "password": "${{ secrets.CENTRAL_PASSWORD }}"
+            },{
+              "id": "vertx-snapshots-repository",
+               "username": "${{ secrets.CENTRAL_USERNAME }}",
+               "password": "${{ secrets.CENTRAL_PASSWORD }}"
+            }]
       - name: Checkout
         uses: actions/checkout@v4
         with:
