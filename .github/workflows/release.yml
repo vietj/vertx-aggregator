@@ -10,10 +10,6 @@ on:
         description: 'Snapshot version'
         required: true
         type: string
-      aggregatorBranch:
-        description: 'Aggregator branch'
-        required: true
-        type: string
       javaVersion:
         description: 'Version of Java to release with'
         required: true
@@ -42,8 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: vietj/vertx-aggregator
-          ref: ${{ inputs.aggregatorBranch }}
+          ref: ${{ inputs.releaseVersion }}
       - name: Configure git
         run: |
           git config --global user.name "Julien Viet"
