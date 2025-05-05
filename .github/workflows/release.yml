@@ -1,25 +1,23 @@
 name: "Release"
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
-      stableVersion:
-        description: 'Vert.x stable version, e.g 1.2.3'
+      releaseVersion:
+        description: 'Release version'
         required: true
         type: string
-      stableSnapshotVersion:
-        description: 'Vert.x stable snapshot version, e.g. 1.2.4-SNAPSHOT'
+      snapshotVersion:
+        description: 'Snapshot version'
         required: true
         type: string
       aggregatorBranch:
-        description: 'Aggregator branch: master | 4.5'
+        description: 'Aggregator branch'
         required: true
         type: string
-        default: 'master'
       javaVersion:
-        description: 'Version of Java to release with: 8 | 11'
+        description: 'Version of Java to release with'
         required: true
         type: string
-        default: '11'
 jobs:
   Prepare:
     runs-on: ubuntu-latest
@@ -60,26 +58,26 @@ jobs:
           ./clone.sh
       - name: Install BOM with release version
         run: |
-          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.stableVersion }}
+          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.releaseVersion }}
           mvn -B -f modules/vertx-dependencies/pom.xml install
       - name: Set release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.stableVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.releaseVersion }}
       - name: Commit release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.stableVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.releaseVersion }}
       - name: Tag release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:tag -Dvertx.version=${{ inputs.stableVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:tag -Dvertx.version=${{ inputs.releaseVersion }}
       - name: Workaround (to be removed)
         run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy release to Sonatype Central
         run: mvn -B -T 4 -Prelease -DskipTests -s .github/maven/settings.xml -Dgpg.signer=bc clean deploy
       - name: Install BOM with snapshot version
         run: |
-          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.stableSnapshotVersion }}
+          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.snapshotVersion }}
           mvn -B -f modules/vertx-dependencies/pom.xml install
       - name: Set snapshot version
-        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.stableSnapshotVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.snapshotVersion }}
       - name: Commit snapshot version
-        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.stableSnapshotVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.snapshotVersion }}
       - name: Workaround (to re removed)
         run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy snapshot to Sonatype Central

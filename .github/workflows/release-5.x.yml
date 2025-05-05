@@ -1,0 +1,21 @@
+name: "Release 5.x"
+on:
+  workflow_dispatch:
+    inputs:
+      releaseVersion:
+        description: 'Vert.x release version, e.g 5.0.0'
+        required: true
+        type: string
+      snapshotVersion:
+        description: 'Vert.x snapshot version, e.g. 5.0.1-SNAPSHOT'
+        required: true
+        type: string
+jobs:
+  Release:
+    uses: ./.github/workflows/release.yml
+    with:
+      releaseVersion: {{ inputs.releaseVersion }}
+      snapshotVersion: {{ inputs.snapshotVersion }}
+      aggregatorBranch: master
+      javaVersion: 11
+    secrets: inherit
