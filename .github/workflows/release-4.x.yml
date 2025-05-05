@@ -17,6 +17,5 @@ jobs:
     with:
       releaseVersion: ${{ inputs.releaseVersion }}
       snapshotVersion: ${{ inputs.snapshotVersion }}
-      aggregatorBranch: 4.5
       javaVersion: 8
     secrets: inherit
