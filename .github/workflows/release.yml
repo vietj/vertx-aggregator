@@ -77,8 +77,6 @@ jobs:
         run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.releaseVersion }}
       - name: Tag release version
         run: mvn -B com.julienviet:releaser-maven-plugin:tag -Dvertx.version=${{ inputs.releaseVersion }}
-      - name: Workaround (to be removed)
-        run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy release to Sonatype Central
         run: mvn -B -T 4 -Prelease -DskipTests -Dgpg.signer=bc clean deploy
       - name: Install BOM with snapshot version
@@ -89,8 +87,6 @@ jobs:
         run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.snapshotVersion }}
       - name: Commit snapshot version
         run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.snapshotVersion }}
-      - name: Workaround (to re removed)
-        run: mvn -B -DskipTests clean install -f modules/vertx-codegen/pom.xml
       - name: Deploy snapshot to Sonatype Central
         run: mvn -B -T 4 -DskipTests clean deploy
       - name: Attach artifact
