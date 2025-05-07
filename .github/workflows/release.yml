@@ -62,26 +62,18 @@ jobs:
         run: |
           chmod +x ./clone.sh
           ./clone.sh
-      - name: Install BOM with release version
-        run: |
-          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.releaseVersion }}
-          mvn -B -f modules/vertx-dependencies/pom.xml install
       - name: Set release version
         run: mvn versions:set -DnewVersion=${{ inputs.releaseVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false
       - name: Commit release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.releaseVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit
       - name: Tag release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:tag -Dvertx.version=${{ inputs.releaseVersion }}
+        run: mvn -B com.julienviet:releaser-maven-plugin:tag
       - name: Deploy release to Sonatype Central
         run: mvn -B -T 4 -Prelease -DskipTests -Dgpg.signer=bc clean deploy
-      - name: Install BOM with snapshot version
-        run: |
-          mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.snapshotVersion }}
-          mvn -B -f modules/vertx-dependencies/pom.xml install
       - name: Set snapshot version
-        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.snapshotVersion }}
-      - name: Commit snapshot version
         run: mvn versions:set -DnewVersion=${{ inputs.snapshotVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false
+      - name: Commit snapshot version
+        run: mvn -B com.julienviet:releaser-maven-plugin:commit -DcommitMessage="Set next snapshot version"
       - name: Deploy snapshot to Sonatype Central
         run: mvn -B -T 4 -DskipTests clean deploy
       - name: Attach artifact
