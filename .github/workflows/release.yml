@@ -67,7 +67,7 @@ jobs:
           mvn -B -f modules/vertx-dependencies/pom.xml versions:set -DnewVersion=${{ inputs.releaseVersion }}
           mvn -B -f modules/vertx-dependencies/pom.xml install
       - name: Set release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.releaseVersion }}
+        run: mvn versions:set -DnewVersion=${{ inputs.releaseVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false
       - name: Commit release version
         run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.releaseVersion }}
       - name: Tag release version
@@ -81,7 +81,7 @@ jobs:
       - name: Set snapshot version
         run: mvn -B com.julienviet:releaser-maven-plugin:apply -Dvertx.version=${{ inputs.snapshotVersion }}
       - name: Commit snapshot version
-        run: mvn -B com.julienviet:releaser-maven-plugin:commit -Dvertx.version=${{ inputs.snapshotVersion }}
+        run: mvn versions:set -DnewVersion=${{ inputs.snapshotVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false
       - name: Deploy snapshot to Sonatype Central
         run: mvn -B -T 4 -DskipTests clean deploy
       - name: Attach artifact
