@@ -88,3 +88,6 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-config.git modules/v
 
 # Incubation
 git clone -b $branch2 --depth 1 git@github.com:vert-x3/vertx-io_uring-incubator.git modules/vertx-io_uring-incubator
+
+# Stack
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-stack.git modules/vertx-stack
