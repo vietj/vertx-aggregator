@@ -84,3 +84,6 @@ git --git-dir=modules/vertx-web/.git --work-tree=modules/vertx-web push --tags o
 
 # Other
 git --git-dir=modules/vertx-config/.git --work-tree=modules/vertx-config push --tags origin $branch
+
+# Stack
+git --git-dir=modules/vertx-stack/.git --work-tree=modules/vertx-stack push --tags origin $branch

@@ -84,3 +84,6 @@ git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-web.git modules/vert
 
 # Other
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-config.git modules/vertx-config
+
+# Stack
+git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-stack.git modules/vertx-stack
