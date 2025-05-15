@@ -70,13 +70,13 @@ jobs:
       - name: Tag release version
         run: mvn -B com.julienviet:releaser-maven-plugin:tag
       - name: Deploy release to Sonatype Central
-        run: mvn -B -T 4 -Prelease -DskipTests -Dgpg.signer=bc clean deploy
+        run: mvn -B -Prelease -DskipTests -Dgpg.signer=bc clean deploy
       - name: Set snapshot version
         run: mvn versions:set -DnewVersion=${{ inputs.snapshotVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false -DprocessDependencies=false
       - name: Commit snapshot version
         run: mvn -B com.julienviet:releaser-maven-plugin:commit -DcommitMessage="Set next snapshot version"
       - name: Deploy snapshot to Sonatype Central
-        run: mvn -B -T 4 -DskipTests clean deploy
+        run: mvn -B -DskipTests clean deploy
       - name: Attach artifact
         if: always()
         uses: actions/upload-artifact@v4
