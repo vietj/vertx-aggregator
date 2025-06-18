@@ -1,5 +1,5 @@
-branch='master'
-branch2='main'
+branch='5.0'
+branch2='5.0'
 
 # Dependencies
 git clone -b $branch --depth 1 git@github.com:vert-x3/vertx-dependencies.git modules/vertx-dependencies

@@ -1,5 +1,5 @@
-branch='master'
-branch2='main'
+branch='5.0'
+branch2='5.0'
 
 # Dependencies
 git --git-dir=modules/vertx-dependencies/.git --work-tree=modules/vertx-dependencies push --tags origin $branch
