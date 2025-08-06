@@ -63,14 +63,14 @@ jobs:
         run: |
           chmod +x ./clone.sh
           ./clone.sh
-      - name: Set release version
-        run: mvn versions:set -DnewVersion=${{ inputs.releaseVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false -DprocessDependencies=false
-      - name: Commit release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:commit
-      - name: Tag release version
-        run: mvn -B com.julienviet:releaser-maven-plugin:tag
-      - name: Deploy release to Sonatype Central
-        run: mvn -B -Prelease -DskipTests -Dgpg.signer=bc clean deploy
+#      - name: Set release version
+#        run: mvn versions:set -DnewVersion=${{ inputs.releaseVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false -DprocessDependencies=false
+#      - name: Commit release version
+#        run: mvn -B com.julienviet:releaser-maven-plugin:commit
+#      - name: Tag release version
+#        run: mvn -B com.julienviet:releaser-maven-plugin:tag
+#      - name: Deploy release to Sonatype Central
+#        run: mvn -B -Prelease -DskipTests -Dgpg.signer=bc clean deploy
       - name: Set snapshot version
         run: mvn versions:set -DnewVersion=${{ inputs.snapshotVersion }} -DoldVersion=* -DgroupId=* -DartifactId=* -DgenerateBackupPoms=false -DprocessDependencies=false
       - name: Commit snapshot version
