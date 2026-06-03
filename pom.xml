@@ -98,4 +98,13 @@
     </plugins>
   </build>
 
+  <profiles>
+    <profile>
+      <id>toolchain</id>
+    </profile>
+    <profile>
+      <id>Java21</id>
+    </profile>
+  </profiles>
+
 </project>
