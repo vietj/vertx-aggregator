@@ -1,6 +1,3 @@
-branch='5.0'
-branch2='5.0'
-
 # Dependencies
 git --git-dir=modules/vertx-dependencies/.git --work-tree=modules/vertx-dependencies add .
 
@@ -66,7 +63,7 @@ git --git-dir=modules/vertx-consul-client/.git --work-tree=modules/vertx-consul-
 git --git-dir=modules/vertx-cassandra-client/.git --work-tree=modules/vertx-cassandra-client add .
 
 # Messaging & Integration
-git --git-dir=modules/vertx-bridge-common/.git --work-tree=modules/vertx-bridge-common add .
+git --git-dir=modules/vertx-eventbus-bridges/.git --work-tree=modules/vertx-eventbus-bridges add .
 git --git-dir=modules/vertx-tcp-eventbus-bridge/.git --work-tree=modules/vertx-tcp-eventbus-bridge add .
 git --git-dir=modules/vertx-stomp/.git --work-tree=modules/vertx-stomp add .
 git --git-dir=modules/vertx-proton/.git --work-tree=modules/vertx-proton add .
