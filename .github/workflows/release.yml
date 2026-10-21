@@ -90,4 +90,3 @@ jobs:
             push.sh
             pom.xml
             modules
-            !modules/**/target
